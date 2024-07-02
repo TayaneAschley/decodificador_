@@ -3,28 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/background.css" />
 
     <title>Decodificador</title>
-    <style>
-      textarea {
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0.5
-        ); /* Ajuste aqui a cor e opacidade desejadas */
-        border: 1px solid #ccc; /* Exemplo de borda, ajuste conforme necessário */
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        width: 100%; /* Ajuste a largura conforme necessário */
-        height: 100px; /* Ajuste a altura conforme necessário */
-        resize: none; /* Evita redimensionamento pelos usuários */
-      }
-    </style>
   </head>
   <body>
     <div class="background">
@@ -41,7 +23,7 @@
     </div>
     <header>
       <div class="header_container">
-        <img src="./assents/imgs/logoAlura.png" alt="logo Alura" />
+        <img src="./imgs/logoAlura.png" alt="logo Alura" />
         <h1>Decodificador</h1>
       </div>
     </header>
@@ -55,7 +37,7 @@
             id="text_output"
             placeholder="texto cripto ou descripto"
           ></textarea>
-          <button class="copy-button" onclick="copyToClipboard('text_output')">
+          <button class="copy-button" onclick="copyText('text_output')">
             Copiar
           </button>
         </div>
@@ -76,11 +58,12 @@
       <div class="footer_container">
         <h1>Created by Tayane | 2024</h1>
         <a href="https://github.com/TayaneAschley" target="_blank"
-          ><img src="./assents/imgs/githubLogo.webp" alt="img github"
+          ><img src="./imgs/githubLogo.webp" alt="img github"
         /></a>
       </div>
     </footer>
     <script src="./scripts/encrypt.js"></script>
     <script src="./scripts/decrypt.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
