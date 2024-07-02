@@ -1,0 +1,112 @@
+@media screen and (max-width: 946px) {
+  .container {
+    display: flex;
+  }
+
+  .container_inputs {
+    gap: 2rem;
+  }
+
+  .copy-button button {
+    width: 9vw;
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .container {
+    display: flex;
+  }
+
+  .container_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 25rem;
+    height: 20em;
+  }
+
+  .box textarea {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    display: flex;
+  }
+
+  .container_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 15rem;
+    height: 25vh;
+  }
+
+  .copy-button {
+    width: 12vw;
+    height: 10vh;
+  }
+  .copy-button button {
+    width: 12vw;
+    height: 5vh;
+  }
+
+  .container_buttons {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    display: flex;
+  }
+
+  .container_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 12rem;
+    height: 15em;
+  }
+  .copy-button {
+    width: 18vw;
+    height: 8vh;
+  }
+
+  .copy-button button {
+    width: 15vw;
+    height: 5vh;
+    font-size: 0.7rem;
+  }
+
+  .spam {
+    font-size: 0.6rem;
+    width: 80vw;
+    height: 1rem;
+  }
+  .container_buttons {
+    gap: 1rem;
+  }
+}

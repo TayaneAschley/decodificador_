@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/mediaQuerys.css" />
 
     <title>Decodificador</title>
   </head>
@@ -37,12 +38,12 @@
             id="text_output"
             placeholder="texto cripto ou descripto"
           ></textarea>
-          <button class="copy-button" onclick="copyText('text_output')">
-            Copiar
-          </button>
+          <div class="copy-button">
+            <button onclick="copyText('text_output')">Copiar</button>
+          </div>
         </div>
       </div>
-      <div class="spam">
+      <div class="span">
         <span>Apenas letras minúsculas e sem acento!</span>
       </div>
       <div class="container_buttons">
