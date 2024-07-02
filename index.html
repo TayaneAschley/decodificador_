@@ -5,50 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/background.css" />
 
     <title>Decodificador</title>
+    <style>
+      textarea {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Ajuste aqui a cor e opacidade desejadas */
+        border: 1px solid #ccc; /* Exemplo de borda, ajuste conforme necessário */
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100%; /* Ajuste a largura conforme necessário */
+        height: 100px; /* Ajuste a altura conforme necessário */
+        resize: none; /* Evita redimensionamento pelos usuários */
+      }
+    </style>
   </head>
   <body>
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <header>
-      <div class="logo_alura">
-        <img src="#" alt="logo Alura" />
+      <div class="header_container">
+        <img src="./assents/imgs/logoAlura.png" alt="logo Alura" />
+        <h1>Decodificador</h1>
       </div>
     </header>
     <div class="container">
       <div class="container_inputs">
         <div class="box">
-          <input id="text_input" type="text" placeholder="digite aqui" />
+          <textarea id="text_input" placeholder="digite aqui"></textarea>
         </div>
         <div class="box">
-          <input
+          <textarea
             id="text_output"
-            type="text"
             placeholder="texto cripto ou descripto"
-          />
+          ></textarea>
+          <button class="copy-button" onclick="copyToClipboard('text_output')">
+            Copiar
+          </button>
         </div>
       </div>
-      <div class="container_spam">
-        <span
-          ><img src="./assents/imgs/atencao(1).png" alt="aviso" />Apenas letras
-          minúsculas e sem acento!</span
-        >
+      <div class="spam">
+        <span>Apenas letras minúsculas e sem acento!</span>
       </div>
       <div class="container_buttons">
-        <button class="button" type="button" id="button_encrypt">
-          Criptografa
+        <button class="buttons" type="button" id="button_encrypt">
+          Criptografar
         </button>
-        <button class="button" type="button" id="button_decrypt">
-          Descriptografa
+        <button class="buttons" type="button" id="button_decrypt">
+          Descriptografar
         </button>
       </div>
     </div>
     <footer>
       <div class="footer_container">
-        <h1>Create by Tayane | 2024</h1>
-        <a href="#"><img src="#" alt="img github" /></a>
+        <h1>Created by Tayane | 2024</h1>
+        <a href="https://github.com/TayaneAschley" target="_blank"
+          ><img src="./assents/imgs/githubLogo.webp" alt="img github"
+        /></a>
       </div>
     </footer>
+    <script src="./scripts/encrypt.js"></script>
+    <script src="./scripts/decrypt.js"></script>
   </body>
-  <script src="./scripts/encrypt.js"></script>
-  <script src="./scripts/decrypt.js"></script>
 </html>
