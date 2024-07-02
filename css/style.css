@@ -3,16 +3,16 @@
 
 body {
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0px;
+  box-sizing: border-box;
   font-family: "Tiny5", sans-serif;
   font-weight: 400;
   font-style: normal;
-  overflow: hidden;
 }
 
 .header_container {
@@ -21,19 +21,16 @@ body {
   justify-content: start;
   gap: 1rem;
   height: 10vh;
+  padding: 0 1rem;
 }
 
 .header_container img {
-  margin-left: 1rem;
   width: 26px;
   border-radius: 2rem;
 }
 
 .header_container h1 {
-  font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #f0e6ef;
 }
 
@@ -44,104 +41,111 @@ body {
   justify-content: center;
   width: 100vw;
   height: 80vh;
+  padding: 0 1rem;
 }
 
 .container_inputs {
-  width: 100vw;
-  height: 32vh;
   display: flex;
-  flex-flow: wrap wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
+  width: 100%;
+  gap: 2rem;
 }
 
 .box {
-  width: 22rem;
+  width: 100%;
+  max-width: 22rem;
   height: 12rem;
   font-size: 1rem;
-  border-radius: 4rem;
+  border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 16px -3px rgba(249, 247, 243, 0.1);
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 2rem;
 }
 
 textarea {
   width: 100%;
-  height: 50%;
+  height: 80%;
   resize: none;
   border: none;
   font-size: 1.3rem;
   color: #f0e6ef;
   background: none;
-  &:focus {
-    outline: none;
-  }
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.copy-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copy-button button {
+  background-color: gray;
+  color: #f0e6ef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.copy-button button:hover {
+  background-color: #bcf4e2;
+  color: #6d6875;
+}
+
+.copy-button button:active {
+  background-color: #6a9f8e;
+  color: #f0e6ef;
 }
 
 .container_buttons {
-  height: 15vh;
-  width: 100vw;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .buttons {
-  width: 15rem;
-  height: 3rem;
+  width: 100%;
+  max-width: 15rem;
+  padding: 1rem;
   color: #6d6875;
   background: #1c1334;
   box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.2);
   border-radius: 10rem;
   font-size: 1.2rem;
+  text-align: center;
   transition: 0.3s;
-  &:hover {
-    background: #352462;
-    color: #f0e6ef;
-    box-shadow: 0px 0px 16px -3px rgba(188, 244, 226, 0.4);
-  }
-  &:active {
-    color: #6d6875;
-    background: #1c1334;
-  }
-}
-.copy-button {
-  width: 20vw;
-  height: 10vh;
-  display: flex;
-  align-items: end;
 }
 
-.copy-button button {
-  width: 6vw;
-  height: 5vh;
-  background-color: gray; /* Cor do botão */
+.buttons:hover {
+  background: #352462;
   color: #f0e6ef;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
-  &:hover {
-    background-color: #bcf4e2;
-    color: #6d6875;
-  }
-  &:active {
-    background-color: #6a9f8e;
-    color: #f0e6ef;
-  }
+  box-shadow: 0px 0px 16px -3px rgba(188, 244, 226, 0.4);
+}
+
+.buttons:active {
+  color: #6d6875;
+  background: #1c1334;
 }
 
 .span {
-  width: 65vw;
-  height: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: start;
+  width: 100%;
+  max-width: 65vw;
   font-size: 0.8rem;
   color: gray;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 footer {
