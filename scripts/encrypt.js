@@ -3,7 +3,6 @@ var buttonEncrypt = document.querySelector("#button_encrypt");
 buttonEncrypt.addEventListener("click", (e) => {
   e.preventDefault();
   let textInputEncrypt = document.querySelector("#text_input").value;
-  console.log({ textInputEncrypt });
   Encrypt(textInputEncrypt);
 
   document.querySelector("#text_input").value = "";
